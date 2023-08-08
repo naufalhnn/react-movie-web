@@ -5,7 +5,7 @@ export const CreditsAvatar = ({ profile_path, name, character }) => {
         src={
           profile_path
             ? `${import.meta.env.VITE_BASE_IMG}/${profile_path}`
-            : '/src/assets/images/dummy-avatar.jpeg'
+            : '/images/dummy-avatar.jpeg'
         }
         alt='credits avatar'
         className='rounded-full w-16 h-16 xl:w-20 xl:h-20 object-cover mx-auto'

@@ -5,7 +5,7 @@ const CardImage = ({ poster, ...props }) => {
         src={
           poster
             ? `${import.meta.env.VITE_BASE_IMG}${poster}`
-            : '/src/assets/images/dummy-poster.png'
+            : '/images/dummy-poster.png'
         }
         alt=''
         className='w-full h-full object-cover rounded-lg'

@@ -2,7 +2,7 @@ const Logo = () => {
   return (
     <div>
       <img
-        src={'/src/assets/film-solid.svg'}
+        src={'/film-solid.svg'}
         alt=''
         className='w-8 h-8'
       />
