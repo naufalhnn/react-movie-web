@@ -26,7 +26,7 @@ const PopularMovies = () => {
                 poster={popularMovie.poster_path}
                 title={popularMovie.title}
                 year={popularMovie.release_date.substring(0, 4)}
-                rating={popularMovie.vote_average}
+                rating={popularMovie.vote_average.toFixed(1)}
               />
             </Link>
           ))}

@@ -5,6 +5,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './index.css';
 import HomePage from './pages/Home.jsx';
 import Detail from './pages/Detail.jsx';
+import SearchResult from './pages/SearchResult';
 
 const router = createBrowserRouter([
   {
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
   {
     path: '/detail/:id',
     element: <Detail />,
+  },
+  {
+    path: '/search/:query',
+    element: <SearchResult />,
   },
 ]);
 

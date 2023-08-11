@@ -35,11 +35,11 @@ export const getUpcomingMovies = async () => {
   return upcomingMovies.data.results;
 };
 
-// export const getSearchMovie = async (movie_name) => {
-//   const searchMovie = await axios.get(
-//     `${import.meta.env.VITE_BASE_URL}/search/keyword?api_key=${
-//       import.meta.env.VITE_API_KEY
-//     }`,
-//   );
-//   return searchMovie.data;
-// };
+export const getSearchMovie = async (query) => {
+  const searchMovie = await axios.get(
+    `${import.meta.env.VITE_BASE_URL}/search/movie?query=${query}&api_key=${
+      import.meta.env.VITE_API_KEY
+    }`,
+  );
+  return searchMovie.data.results;
+};

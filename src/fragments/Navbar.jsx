@@ -1,9 +1,10 @@
 import Logo from '../components/Logo';
+import SearchField from '../components/SearchField';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
-    <div className='flex fixed z-40 justify-center xl:justify-between items-center xl:px-36 mx-auto w-full h-16 xl:h-20 bg-slate-800 border-b border-slate-700'>
+    <div className='flex fixed z-40 justify-between items-center px-5 xl:px-36 mx-auto w-full h-16 xl:h-20 bg-slate-800 border-b border-slate-700'>
       <div className='flex gap-5 justify-center items-center'>
         <Link
           to='/'
@@ -15,7 +16,9 @@ const Navbar = () => {
         </Link>
         {/* <RadixDropdown /> */}
       </div>
-      {/* <div><SearchField /></div> */}
+      <div>
+        <SearchField />
+      </div>
     </div>
   );
 };
